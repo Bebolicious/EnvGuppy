@@ -1,0 +1,21 @@
+{
+  "name": "Game Developer",
+  "description": "Game development with C# and .NET",
+  "icon": "Gamepad2",
+  "languages": ["csharp", "cpp"],
+  "selections": [
+    "dotnet-sdk-8",
+    "dotnet-sdk-9",
+    "cmake",
+    "vs-2022",
+    "rider",
+    "git",
+    "github-cli",
+    "chrome",
+    "steam",
+    "epic-games",
+    "discord"
+  ],
+  "customInstalls": [],
+  "defaultRepoBase": "~/repos"
+}

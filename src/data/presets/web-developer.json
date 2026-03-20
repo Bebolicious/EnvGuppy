@@ -1,0 +1,21 @@
+{
+  "name": "Web Developer",
+  "description": "Frontend & backend web development essentials",
+  "icon": "Globe",
+  "languages": ["javascript", "typescript"],
+  "selections": [
+    "nodejs-lts",
+    "pnpm",
+    "vscode",
+    "chrome",
+    "firefox",
+    "git",
+    "github-cli",
+    "docker-desktop",
+    "postman",
+    "discord",
+    "notion"
+  ],
+  "customInstalls": [],
+  "defaultRepoBase": "~/repos"
+}

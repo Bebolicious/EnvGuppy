@@ -1,0 +1,23 @@
+{
+  "name": "DevOps",
+  "description": "Infrastructure and deployment tooling",
+  "icon": "Cloud",
+  "languages": ["python", "go"],
+  "selections": [
+    "python-3-13",
+    "go-sdk",
+    "vscode",
+    "neovim",
+    "chrome",
+    "git",
+    "github-cli",
+    "azure-cli",
+    "docker-desktop",
+    "podman",
+    "slack",
+    "teams",
+    "7zip"
+  ],
+  "customInstalls": [],
+  "defaultRepoBase": "~/repos"
+}

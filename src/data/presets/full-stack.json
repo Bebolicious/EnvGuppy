@@ -1,0 +1,35 @@
+{
+  "name": "Full Stack",
+  "description": "Complete full-stack development environment",
+  "icon": "Layers",
+  "languages": ["javascript", "typescript", "csharp", "python"],
+  "selections": [
+    "nodejs-lts",
+    "pnpm",
+    "nvm",
+    "dotnet-sdk-8",
+    "python-3-13",
+    "vscode",
+    "rider",
+    "chrome",
+    "firefox",
+    "git",
+    "github-cli",
+    "azure-cli",
+    "docker-desktop",
+    "postman",
+    "discord",
+    "slack",
+    "notion",
+    "7zip"
+  ],
+  "customInstalls": [
+    {
+      "id": "example-project",
+      "repo": "https://github.com/microsoft/TypeScript-Node-Starter.git",
+      "name": "TypeScript Starter",
+      "path": ""
+    }
+  ],
+  "defaultRepoBase": "~/repos"
+}
