@@ -1,4 +1,4 @@
-# EnvGuppy
+# EnvGuppy ($${\color{orange}Beta}$$)
 
 A desktop GUI application that sets up your development environment through an intuitive wizard. Select what you need, and EnvGuppy installs everything for you.
 
