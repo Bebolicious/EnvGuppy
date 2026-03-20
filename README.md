@@ -2,6 +2,9 @@
 
 A desktop GUI application that sets up your development environment through an intuitive wizard. Select what you need, and EnvGuppy installs everything for you.
 
+<img width="1099" height="711" alt="image" src="https://github.com/user-attachments/assets/d11ea677-b0fb-408d-859a-922e0fb5622a" />
+
+
 ## Tech Stack
 
 - **Tauri v2** (Rust backend)
