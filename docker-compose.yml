@@ -1,0 +1,37 @@
+services:
+  # -------------------------------------------------------
+  # Run EnvGuppy with GUI (requires X11 on the host)
+  # -------------------------------------------------------
+  envguppy:
+    build:
+      context: .
+      target: runtime
+    environment:
+      - DISPLAY=${DISPLAY:-:0}
+      - WAYLAND_DISPLAY=${WAYLAND_DISPLAY:-}
+      - XDG_RUNTIME_DIR=/tmp
+    volumes:
+      # X11 socket for GUI display
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      # Wayland socket (if using Wayland)
+      - ${XDG_RUNTIME_DIR:-/run/user/1000}/${WAYLAND_DISPLAY:-wayland-0}:/tmp/${WAYLAND_DISPLAY:-wayland-0}:ro
+      # Persist repos cloned by the app
+      - envguppy-repos:/home/guppy/repos
+    network_mode: host
+    # Required for GPU acceleration (optional but smoother)
+    devices:
+      - /dev/dri:/dev/dri
+
+  # -------------------------------------------------------
+  # Build-only: extract artifacts without running
+  # -------------------------------------------------------
+  build-artifacts:
+    build:
+      context: .
+      target: runtime
+    entrypoint: ["sh", "-c", "cp -r /home/guppy/artifacts/* /output/"]
+    volumes:
+      - ./dist-docker:/output
+
+volumes:
+  envguppy-repos:
