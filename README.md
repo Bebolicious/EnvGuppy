@@ -23,16 +23,7 @@ A desktop GUI application that sets up your development environment through an i
 - Custom Git repository cloning
 - Dry-run mode to preview without installing
 - Post-install summary with success/failure details
-- Spacedrive-inspired dark UI with pastel mint accents (EnvGuppy)
-
-## Development
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) >= 18
-- [Rust](https://www.rust-lang.org/tools/install) >= 1.77
-- [Tauri prerequisites](https://v2.tauri.app/start/prerequisites/)
-
+  
 ### Setup
 
 ```bash
